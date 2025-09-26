@@ -28,7 +28,7 @@
 
 1. Download the repository as a ZIP file and extract it.
 
-2. Open chrome://extensions/ in Chrome.
+2. Open ```chrome://extensions/ ``` in Chrome.
 
 3. Enable Developer mode.
 
