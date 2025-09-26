@@ -1,0 +1,1 @@
+// Empty background file required by manifest v3
