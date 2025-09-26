@@ -24,18 +24,18 @@
 }
 ```
 
-Installation
+## Installation
 
-Download the repository as a ZIP file and extract it.
+1. Download the repository as a ZIP file and extract it.
 
-Open chrome://extensions/ in Chrome.
+2. Open chrome://extensions/ in Chrome.
 
-Enable Developer mode.
+3. Enable Developer mode.
 
-Click Load unpacked and select the extracted folder.
+4. Click Load unpacked and select the extracted folder.
 
-Notes
+## Notes
 
-Currently supports text input and textarea fields.
+- Currently supports text input and textarea fields.
 
-Ideal for repetitive form submissions and testing purposes.
+- Ideal for repetitive form submissions and testing purposes.
