@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy — AutoFillForms</title>
+  <meta name="description" content="Privacy Policy for AutoFillForms Chrome extension: what data is collected, how it is used, and how you can contact us." />
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --text:#e6eef8;
+      --muted:#9fb0c8;
+      --accent:#3b82f6;
+      --maxw:900px;
+    }
+    body{
+      height:100%;
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:linear-gradient(180deg,var(--bg),#071023 120%);
+      color:var(--text);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.55;
+    }
+    .wrap{
+      max-width:var(--maxw);
+      margin:40px auto;
+      padding:28px;
+    }
+    .card{
+      background:linear-gradient(180deg,var(--card),#07101a);
+      border-radius:12px;
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+    h1{ margin:0 0 8px; font-size:28px; }
+    p.lead{ color:var(--muted); margin:6px 0 18px; }
+    h2{ color:var(--text); margin-top:24px; margin-bottom:8px; font-size:18px; }
+    p{ margin:10px 0; color:var(--muted); }
+    ul{ margin:8px 0 12px 20px; color:var(--muted); }
+    code{ background: rgba(255,255,255,0.03); padding:2px 6px; border-radius:6px; color:#bfe0ff; font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Courier New", monospace; }
+    .small{ font-size:13px; color:#8ea6bf; }
+    a.cta{ display:inline-block; background:var(--accent); color:white; padding:8px 12px; border-radius:8px; text-decoration:none; margin-top:10px; }
+    footer{ margin-top:26px; color:#6f8aa6; font-size:13px; }
+    .meta{ margin-top:6px; color:#9fb0c8; font-size:13px; }
+    .section-note{ background: rgba(255,255,255,0.02); padding:12px; border-radius:8px; margin-top:8px; color:#cfe6ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main">
+      <h1>Privacy Policy</h1>
+      <p class="lead">Last updated: <strong>September 27, 2025</strong></p>
+
+      <p>This Privacy Policy describes how <strong>AutoFillForms</strong> (the “Extension”) collects, uses, and protects information when you install and use the Extension. The Extension is provided to help users autofill Google Forms using a JSON configuration stored locally in the browser.</p>
+
+      <h2>Developer & Contact</h2>
+      <p class="small">AutoFillForms — Chrome extension</p>
+      <p>If you have questions about this Privacy Policy or want to request changes or data deletion, contact: <a href="mailto:madhurtiwari02@gmail.com">madhurtiwari02@gmail.com</a>.</p>
+
+      <h2>Single Purpose</h2>
+      <p>The single purpose of AutoFillForms is to autofill Google Forms fields (text inputs, textareas, multiple choice, checkboxes and dropdowns) using JSON key-value pairs provided and stored by the user. The extension performs autofill only when the user clicks the extension's “Autofill Form” button.</p>
+
+      <h2>Permissions & Why They Are Required</h2>
+      <p class="small">When you install the Extension it will request the minimum permissions required to perform its single purpose:</p>
+      <ul>
+        <li><strong>activeTab</strong> — allows temporary access to the currently active tab (the Google Form) when you click the extension so it can read and fill fields on that page.</li>
+        <li><strong>scripting</strong> — used to inject the autofill script into the active form tab at the user's request (only when clicking the button).</li>
+        <li><strong>storage</strong> — to save and retrieve your JSON configuration locally in your browser using Chrome's storage API.</li>
+        <li><strong>Host permission</strong> — limited to Google Forms pages (e.g. <code>https://docs.google.com/forms/*</code>) so the extension can locate form elements to autofill. The extension does not request broad host access beyond what is required for Google Forms.</li>
+      </ul>
+
+      <div class="section-note">
+        <strong>No remote code:</strong> All code executed by the Extension is bundled within the extension package. The Extension does not fetch or execute external JavaScript or WebAssembly at runtime.
+      </div>
+
+      <h2>Data Collection & Usage</h2>
+      <p><strong>Short summary:</strong> AutoFillForms does not collect or transmit your personal data to any server. All data remains local to your browser unless you choose to share or export it manually.</p>
+
+      <h3>What the extension reads locally</h3>
+      <ul>
+        <li>Google Form field labels and option text are read in order to match keys in your stored JSON so the extension can click the proper options. This reading is performed only in the active tab when you click “Autofill Form.”</li>
+        <li>Your saved JSON configuration is stored locally in Chrome storage (not transmitted off-device).</li>
+      </ul>
+
+      <h3>What the extension does NOT do</h3>
+      <ul>
+        <li>It does not upload or send your JSON data or any form contents to external servers.</li>
+        <li>It does not collect analytics, track users, or sell/transfer user data.</li>
+        <li>It does not read data from other pages or tabs except the active Google Form tab when you explicitly request autofill.</li>
+      </ul>
+
+      <h2>Data Retention, Deletion & User Control</h2>
+      <p>You control the JSON data the extension stores. To delete stored data:</p>
+      <ul>
+        <li>Open the extension popup and clear the JSON textarea and click Save (or use the extension UI to remove saved configurations).</li>
+        <li>Or remove the extension from Chrome — this removes extension storage data as part of the uninstall process.</li>
+      </ul>
+
+      <h2>Third Parties</h2>
+      <p>The Extension does not share data with third parties. It includes no embedded third-party SDKs, analytics, or advertising networks.</p>
+
+      <h2>Security</h2>
+      <p>The Extension stores user JSON using Chrome's extension storage APIs. While local storage is reasonably safe, please do not store sensitive personal data (passwords, payment info, medical records, etc.) in the extension's saved JSON. If you need to autofill sensitive data, consider more secure mechanisms designed specifically for secret management.</p>
+
+      
+      <h2>Compliance & Legal</h2>
+      <p>The Extension is designed to be compliant with common data protection standards by minimizing data collection and keeping user data local. If you are subject to GDPR, CCPA or similar laws and need further information about data handling, please contact the developer at the email above.</p>
+
+      <h2>Privacy Disclosure for Chrome Web Store Listing</h2>
+      <p>When listing on the Chrome Web Store, include the following disclosures in the store form:</p>
+      <ul>
+        <li><strong>Data collected:</strong> Website content (Google Form labels & options) read temporarily in the active tab to match JSON keys. User-supplied JSON stored locally via Chrome storage. No data transmitted externally.</li>
+        <li><strong>Purpose:</strong> To map JSON keys to Google Form fields and populate those fields on user request.</li>
+        <li><strong>Do you sell or transfer user data:</strong> No.</li>
+        <li><strong>Remote code:</strong> No — all code is bundled in the extension package.</li>
+      </ul>
+
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top reflects the most recent revision. If we make material changes that affect how we use data, we will update this page and, if appropriate, notify users of changes.</p>
+
+      <h2>Contact</h2>
+      <p>If you have questions, concerns, or requests about this policy or about data stored by the Extension, contact: <a href="mailto:madhurtiwari02@gmail.com">madhurtiwari02@gmail.com</a>.</p>
+
+      <footer>
+        <p class="meta">AutoFillForms — Privacy Policy • Last updated: September 27, 2025</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
