@@ -70,39 +70,39 @@ function fillForm(formData) {
         }
 
         // --- Checkboxes (multi-select) ---
-        const checkboxes = label.querySelectorAll('[role="checkbox"]');
-        if (checkboxes.length > 0) {
-            const values = Array.isArray(value) ? value : [value];
-            checkboxes.forEach(box => {
-                const optionText = box.getAttribute("data-value") || box.innerText.trim();
-                if (values.includes(optionText)) {
-                    if (box.getAttribute("aria-checked") !== "true") {
-                        box.click();
-                    }
-                } else {
-                    if (box.getAttribute("aria-checked") === "true") {
-                        box.click();
-                    }
-                }
-            });
-            return;
-        }
+        // const checkboxes = label.querySelectorAll('[role="checkbox"]');
+        // if (checkboxes.length > 0) {
+        //     const values = Array.isArray(value) ? value : [value];
+        //     checkboxes.forEach(box => {
+        //         const optionText = box.getAttribute("data-value") || box.innerText.trim();
+        //         if (values.includes(optionText)) {
+        //             if (box.getAttribute("aria-checked") !== "true") {
+        //                 box.click();
+        //             }
+        //         } else {
+        //             if (box.getAttribute("aria-checked") === "true") {
+        //                 box.click();
+        //             }
+        //         }
+        //     });
+        //     return;
+        // }
 
         // --- Dropdown (select menu) ---
-        const dropdown = label.querySelector('[role="listbox"]');
-        if (dropdown) {
-            dropdown.click(); // open
-            const observer = new MutationObserver(() => {
-                const options = document.querySelectorAll('div[role="option"]');
-                options.forEach(opt => {
-                    const optText = opt.innerText.trim();
-                    if (optText === value) {
-                        opt.click();
-                        observer.disconnect();
-                    }
-                });
-            });
-            observer.observe(document.body, { childList: true, subtree: true });
-        }
+        // const dropdown = label.querySelector('[role="listbox"]');
+        // if (dropdown) {
+        //     dropdown.click(); // open
+        //     const observer = new MutationObserver(() => {
+        //         const options = document.querySelectorAll('div[role="option"]');
+        //         options.forEach(opt => {
+        //             const optText = opt.innerText.trim();
+        //             if (optText === value) {
+        //                 opt.click();
+        //                 observer.disconnect();
+        //             }
+        //         });
+        //     });
+        //     observer.observe(document.body, { childList: true, subtree: true });
+        // }
     });
 }

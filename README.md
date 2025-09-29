@@ -7,8 +7,8 @@
 - Supports:
   - ✅ Text inputs & textareas  
   - ✅ Multiple Choice (radio buttons)  
-  - ✅ Checkboxes (multi-select)  
-  - ✅ Dropdowns (select menus)  
+  <!-- - ✅ Checkboxes (multi-select)   -->
+  <!-- - ✅ Dropdowns (select menus)   -->
 - Editable JSON data directly from the popup.
 - Only fills the form when you click the **“Autofill Form”** button.
 - Lightweight and easy to use.
@@ -27,7 +27,6 @@
   "Email": "john@example.com",
   "Phone": "1234567890",
   "Gender": "Male",
-  "Languages Known": ["Python", "C++", "JavaScript"],
   "Country": "India"
 }
 ```
@@ -38,9 +37,9 @@
 
 - Multiple Choice (Radio) → String (one option)
 
-- Checkboxes → Array of strings (multiple options)
+<!-- - Checkboxes → Array of strings (multiple options) -->
 
-- Dropdown → String (one option)
+<!-- - Dropdown → String (one option) -->
 
 ## ⚙️ Installation
 
