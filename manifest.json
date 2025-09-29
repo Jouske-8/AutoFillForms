@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "AutoFillForms",
-  "version": "1.1",
+  "version": "1.2",
   "description": "Autofills Google Forms using a JSON key-value pair.",
   "permissions": [
     "activeTab",

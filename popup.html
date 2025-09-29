@@ -1,15 +1,27 @@
 <!DOCTYPE html>
+
 <html>
+
 <head>
     <title>AutoFill Forms</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <h2>AutoFill Forms</h2>
-    <textarea id="jsonData" rows="10" placeholder='{"Name": "John", "Email": "john@example.com"}'></textarea>
+
+    <div class="container">
+        <div id="kvContainer"></div>
+    </div>
+    <button id="addRowBtn">Add Row</button>
+
     <button id="saveBtn">Save JSON</button>
     <button id="fillBtn">Autofill Form</button>
-    <p id="status"></p>
+
+    <pre id="status"></pre>
+
     <script src="popup.js"></script>
+
 </body>
+
 </html>

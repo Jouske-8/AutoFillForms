@@ -1,23 +1,37 @@
 body {
-    font-family: Arial, sans-serif;
-    width: 300px;
-    padding: 10px;
+font-family: Arial, sans-serif;
+width: 300px;
+padding: 10px;
 }
 
-textarea {
-    width: 100%;
-    margin-bottom: 10px;
+.kvRow {
+display: flex;
+gap: 5px;
+margin-bottom: 8px;
+}
+
+.kvRow input {
+flex: 1;
+padding: 5px;
+font-size: 14px;
+width: 50%;
 }
 
 button {
-    margin: 5px 0;
-    width: 100%;
-    padding: 8px;
-    cursor: pointer;
+margin: 5px 0;
+width: 100%;
+padding: 8px;
+cursor: pointer;
 }
 
 #status {
-    font-size: 12px;
-    color: green;
-    margin-top: 5px;
+font-size: 12px;
+color: green;
+margin-top: 5px;
+white-space: pre-wrap;
+}
+
+.container {
+    max-height: 200px;
+    overflow-y: auto;
 }
